@@ -3,17 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Bug Smasher</title>
-    <script type="text/javascript" src="script.js">
+    <script defer type="text/javascript" src="script.js">
 
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h2 style="display: inline-block">Score : &nbsp;</h2><h2 id="score">0</h2>
-      <h2>Bug Smasher</h2>
-      <button type="button" onclick="resetScore()">Reset Score</button>
-      <button type="button" onclick="resetSpeed()">Reset Speed</button>
+      <div id="column-1">
+        <h2 style="display: inline-block">Score : &nbsp;</h2><h2 id="score">0</h2>
+        <h2>Bug Smasher</h2>
+      </div>
+      <div id="column-2">
+        <button type="button" onclick="resetScore()">Reset Score</button>
+        <button type="button" onclick="resetSpeed()">Reset Speed</button>
+      </div>
     </header>
     <canvas id="canvas"></canvas>
   </body>
